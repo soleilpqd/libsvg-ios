@@ -71,8 +71,9 @@
 {
     [super viewWillAppear:animated];
 	_scrollView.zoomScale = 1.0;
-	_imageView.image = [ UIImage imageWithContentsOfSVGFile:_imageName ];
+	_imageView.image = [ svg_ios imageWithContentsOfSVGFile:_imageName ];
 	[self configureView];
+//    NSLog( @"%@", [ svg_ios about ]);
 }
 
 - (void)viewDidAppear:(BOOL)animated

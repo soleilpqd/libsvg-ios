@@ -26,16 +26,6 @@
 
 @implementation svg_ios
 
-+ ( NSString* )about {
-    return @"LibSVG-iOS";
-}
-
-@end
-
-#pragma mark - UIImage additional
-
-@implementation UIImage (isvg)
-
 + ( UIImage* )imageWithContentsOfSVGFile:(NSString *)path withTransform:( CGAffineTransform )transform {
     if (![[ NSFileManager defaultManager ] fileExistsAtPath:path ])
         NSAssert( FALSE, @"ISVG file not found/invalid input path: %@", path );
@@ -66,22 +56,16 @@
 
 + ( UIImage* )imageWithContentsOfSVGFile:(NSString *)path withScale:( CGFloat )scale {
     CGAffineTransform transform = CGAffineTransformMakeScale( scale, scale );
-    return [ self imageWithContentsOfSVGFile:path withTransform:transform ];
+    return [ svg_ios imageWithContentsOfSVGFile:path withTransform:transform ];
 }
 
 + ( UIImage* )imageWithContentsOfSVGFile:(NSString *)path {
-    return [ self imageWithContentsOfSVGFile:path withTransform:CGAffineTransformIdentity ];
+    return [ svg_ios imageWithContentsOfSVGFile:path withTransform:CGAffineTransformIdentity ];
 }
 
-@end
-
-#pragma mark - NSData additional
-
-@implementation NSData (isvg)
-
-- ( UIImage* )svgImagewithTransform:( CGAffineTransform )transform {
-	svg_t *svg;
-	if ( !isvgNewRenderEngineWithData( &svg, self.bytes, self.length )) return nil;
++ ( UIImage* )imageWithSVGData:(NSData *)data withTransform:( CGAffineTransform )transform {
+    svg_t *svg;
+	if ( !isvgNewRenderEngineWithData( &svg, data.bytes, data.length )) return nil;
     svg_length_t w, h;
     svg_get_size( svg, &w, &h );
 	double a, b;
@@ -105,13 +89,13 @@
 	return res;
 }
 
-- ( UIImage* )imageWithScale:( CGFloat )scale {
++ ( UIImage* )imageWithSVGData:(NSData *)data withScale:( CGFloat )scale {
     CGAffineTransform transform = CGAffineTransformMakeScale( scale, scale );
-    return [ self svgImagewithTransform:transform ];
+    return [ svg_ios imageWithSVGData:data withTransform:transform ];
 }
 
-- ( UIImage* )svgImage {
-    return [ self svgImagewithTransform:CGAffineTransformIdentity ];
++ ( UIImage* )imageWithSVGData:(NSData *)data {
+    return [ svg_ios imageWithSVGData:data withTransform:CGAffineTransformIdentity ];
 }
 
 @end

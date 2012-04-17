@@ -1,6 +1,6 @@
-/* isvgRenderrer: render SVG image into UIImage using CoreGraphics
+/* libsvg-ios: render SVG image into UIImage using CoreGraphics
  *
- * Copyright © DuongPQ <soleilpqd@gmail.com>
+ * Copyright © DuongPQ <soleilpqd@gmail.com> from RunSystem
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -27,25 +27,11 @@
     
 }
 
-+ ( NSString* )about;
-
-@end
-
-// Objective-C functions
-// Create UIImage from SVG data
-
-@interface UIImage (isvg)
-
 + ( UIImage* )imageWithContentsOfSVGFile:(NSString *)path withTransform:( CGAffineTransform )transform;
 + ( UIImage* )imageWithContentsOfSVGFile:(NSString *)path withScale:( CGFloat )scale;
 + ( UIImage* )imageWithContentsOfSVGFile:(NSString *)path;
-
-@end
-
-@interface NSData (isvg)
-
-- ( UIImage* )svgImagewithTransform:( CGAffineTransform )transform;
-- ( UIImage* )imageWithScale:( CGFloat )scale;
-- ( UIImage* )svgImage;
++ ( UIImage* )imageWithSVGData:(NSData *)data withTransform:( CGAffineTransform )transform;
++ ( UIImage* )imageWithSVGData:(NSData *)data withScale:( CGFloat )scale;
++ ( UIImage* )imageWithSVGData:(NSData *)data;
 
 @end

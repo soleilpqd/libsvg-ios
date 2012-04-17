@@ -47,6 +47,10 @@
                                                          inDirectory:@"images" ] sortedArrayUsingSelector:@selector( localizedCaseInsensitiveCompare: )] retain ];
     _samplesNames = [[[[ NSBundle mainBundle ] pathsForResourcesOfType:@"svg"
                                                            inDirectory:@"samples" ] sortedArrayUsingSelector:@selector( localizedCaseInsensitiveCompare: )] retain ];
+    
+    UIAlertView *alert = [[ UIAlertView alloc ] initWithTitle:@"Images sources" message:@"W3C samples: SVG files from W3C's SVG 1.1 specification.\nGG Images: somes images found from Google Images (I can't remember source), just for testing; they may have copyright so plz use for personal purpose." delegate:nil cancelButtonTitle:@"Close" otherButtonTitles:nil ];
+    [ alert show ];
+    [ alert release ];
 }
 
 - (void)viewDidUnload
@@ -59,7 +63,6 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    NSLog( @"%@", [ svg_ios about ]);
 }
 
 - (void)viewDidAppear:(BOOL)animated

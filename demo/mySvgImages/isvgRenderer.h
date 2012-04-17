@@ -1,6 +1,6 @@
-/* isvgRenderrer: render SVG image into UIImage using CoreGraphics
+/* libsvg-ios: render SVG image into UIImage using CoreGraphics
  *
- * Copyright © DuongPQ <soleilpqd@gmail.com>
+ * Copyright © DuongPQ <soleilpqd@gmail.com> from RunSystem
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
