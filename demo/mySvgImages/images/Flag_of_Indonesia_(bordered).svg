@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.0"
+   width="600"
+   height="400"
+   id="Flag of Indonesia">
+  <rect
+     style="fill:#ce1126"
+     x="0"
+     y="0"
+     width="600"
+     height="200"
+     id="Red Stripe" />
+  <rect
+     style="fill:#ffffff"
+     x="0"
+     y="200"
+     width="600"
+     height="200"
+     id="White Stripe" />
+  <rect
+     width="600"
+     height="400"
+     fill="none"
+     stroke-width="10"
+     stroke="black" />
+</svg>

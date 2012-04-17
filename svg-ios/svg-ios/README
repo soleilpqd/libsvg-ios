@@ -1,0 +1,67 @@
+1. What this'?:
+
+Render SVG document into UIImage using CoreGraphics for iOS SDK.
+Copyright © DuongPQ <soleilpqd@gmail.com> from RunSystem
+
+Based on libsvg-cairo (version 0.1.6) by Carl D. Worth <cworth@isi.edu> Copyright © 2002 USC/Information Sciences Institute.
+
+This library is free software; you can redistribute it and/or modify it under the terms of the GNU Library General Public License
+as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Library General Public License for more details.
+
+You should have received a copy of the GNU Library General Public License along with this library; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+2. Dependencies:
+
+libsvg (version 0.1.4) by Carl D. Worth <cworth@isi.edu> Copyright © 2002 USC/Information Sciences Institute.
+    URL: http://cairographics.org/snapshots/
+libjpeg (version 6b) Copyright (C) 1994-1997, Thomas G. Lane from The Independent JPEG Group's JPEG software.
+    URL: http://libjpeg.sourceforge.net/
+         http://www.ijg.org/
+libpng (version 1.5.10) Copyright (c) 2004, 2006-2011 Glenn Randers-Pehrson.
+    URL: http://www.libpng.org/pub/png/libpng.html
+
+libjpeg and libpng are required by libsvg. We can remove them by patch libsvg:
+- Remove svg_image.c
+- Remove all "_svg_image_*" functions in svgint.h & svg_element.c
+but this will disable SVG raster images.
+
+3. Change log:
+
+For compatible with ObjC and other libraries, I have to:
+- Change function "png_set_gray_1_2_4_to_8" in svg_image.c to "png_set_expand_gray_1_2_4_to_8" and all related.
+- Change libpng & libjpeg reference in svg_image.c from <> to ""
+- Remove the below line:
+    #include "config.h"
+    #include "svg_version.h"
+    LIBSVG_EXPAT and related.
+in svgint.h.
+- To support gradient stop point percent unit: add function "_svg_attribute_get_offset" in svg_attributes.c,
+    change from "_svg_attribute_get_offset" to above function in function "_svg_parser_parse_gradient_stop" in svg_parser.c.
+- Remove all function "main()" in libjpeg & libpng.
+
+4. Ability:
+
+libsvg-cairo & libsvg are very old so the libsvg-ios's ability is limited. It can not render SVG images which have:
+- CSS styling
+- Pattern drawing
+- Animation
+- Advanced style
+- Text (can draw text but very basic, almost bad).
+... and many other issues.
+
+5. How to build:
+
+With XCode 4:
+- Select scheme svg-ios-sim > Iphone simulator, then Build to build libsvg-ios-sim.a for Simulator.
+- Select scheme svg-ios-dev > IOS device, then Build to build libsvg-ios-dev.a for device.
+- Buil all 2 above lib files, then select scheme svg-ios-universal > IOS device,
+    then Build to build libsvg-ios.a which is the combine of both lib for Simulator and device.
+    
+6. How to import into project:
+
+- Import framework: libz.dylib (for libpng), libxml2.dylib (for libsvg; don't forget add /usr/include/libxml2 to Header search path of Project configuration).
+- Import directly source code into project or build into binary then import lib file + header files (in product path) into project.

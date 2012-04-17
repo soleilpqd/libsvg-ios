@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="800" height="800" viewBox="-3,-2.5 5,5">
+
+<defs>
+  <line id="slantedline" x1="0" y1="-1" x2="0" y2="2" transform="translate(0,-1) rotate(-54)"/>
+  <clipPath id="72degrees">
+    <polygon points="0,0 2,-2 0,-2"/>
+    <polygon points="0,0 0,-2 -2,-2" transform="rotate(72)"/>
+  </clipPath>
+  <g id="normpentagon">
+      <use id="edge" xlink:href="#slantedline" clip-path="url(#72degrees)"/>
+      <use xlink:href="#edge" transform="rotate(144)"/>
+      <use xlink:href="#edge" transform="rotate(-144)"/>
+      <use xlink:href="#edge" transform="rotate(72)"/>
+      <use xlink:href="#edge" transform="rotate(-72)"/>
+  </g>
+</defs>
+
+<use xlink:href="#normpentagon" transform="rotate(5)" stroke="#f00" stroke-width=".2"/>
+<use xlink:href="#normpentagon" transform="translate(.3 -.5) scale(1.2) rotate(20)" stroke="#0f0" stroke-width=".1" stroke-opacity=".5"/>
+<use xlink:href="#normpentagon" transform="translate(-1) scale(2)" stroke="#00f" stroke-width=".03" stroke-dasharray=".04 .05"/>
+</svg>

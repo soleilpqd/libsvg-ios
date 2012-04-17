@@ -1,0 +1,362 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B9D403A152DE618009B02CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B9D4039152DE618009B02CF /* UIKit.framework */; };
+		6B9D403C152DE618009B02CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B9D403B152DE618009B02CF /* Foundation.framework */; };
+		6B9D403E152DE618009B02CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B9D403D152DE618009B02CF /* CoreGraphics.framework */; };
+		6B9D4044152DE618009B02CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B9D4042152DE618009B02CF /* InfoPlist.strings */; };
+		6B9D4046152DE618009B02CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9D4045152DE618009B02CF /* main.m */; };
+		6B9D404A152DE618009B02CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9D4049152DE618009B02CF /* AppDelegate.m */; };
+		6B9D404D152DE618009B02CF /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9D404C152DE618009B02CF /* MasterViewController.m */; };
+		6B9D4050152DE618009B02CF /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9D404F152DE618009B02CF /* DetailViewController.m */; };
+		6B9D4053152DE618009B02CF /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B9D4051152DE618009B02CF /* MasterViewController.xib */; };
+		6B9D4056152DE618009B02CF /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B9D4054152DE618009B02CF /* DetailViewController.xib */; };
+		6B9D405D152DE8BB009B02CF /* images in Resources */ = {isa = PBXBuildFile; fileRef = 6B9D405C152DE8BB009B02CF /* images */; };
+		8801364E153D5BD600BD32D9 /* samples in Resources */ = {isa = PBXBuildFile; fileRef = 8801364D153D5BD600BD32D9 /* samples */; };
+		88013651153D5D9000BD32D9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 88013650153D5D9000BD32D9 /* libz.dylib */; };
+		88013653153D5DBB00BD32D9 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 88013652153D5DBB00BD32D9 /* libxml2.dylib */; };
+		880B03F41536E32B000D3681 /* svg.png in Resources */ = {isa = PBXBuildFile; fileRef = 880B03F31536E32B000D3681 /* svg.png */; };
+		880D771915382385001F8294 /* libsvg-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 880D771815382385001F8294 /* libsvg-ios.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6B9D4035152DE618009B02CF /* mySvgImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mySvgImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B9D4039152DE618009B02CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6B9D403B152DE618009B02CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6B9D403D152DE618009B02CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6B9D4041152DE618009B02CF /* mySvgImages-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mySvgImages-Info.plist"; sourceTree = "<group>"; };
+		6B9D4043152DE618009B02CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6B9D4045152DE618009B02CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6B9D4047152DE618009B02CF /* mySvgImages-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mySvgImages-Prefix.pch"; sourceTree = "<group>"; };
+		6B9D4048152DE618009B02CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6B9D4049152DE618009B02CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6B9D404B152DE618009B02CF /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		6B9D404C152DE618009B02CF /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		6B9D404E152DE618009B02CF /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		6B9D404F152DE618009B02CF /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		6B9D4052152DE618009B02CF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController.xib; sourceTree = "<group>"; };
+		6B9D4055152DE618009B02CF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
+		6B9D405C152DE8BB009B02CF /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		8801364D153D5BD600BD32D9 /* samples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = samples; sourceTree = "<group>"; };
+		88013650153D5D9000BD32D9 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		88013652153D5DBB00BD32D9 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		880B03F31536E32B000D3681 /* svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = svg.png; sourceTree = "<group>"; };
+		880D751A1538071D001F8294 /* isvgRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = isvgRenderer.h; sourceTree = "<group>"; };
+		880D751B1538071D001F8294 /* isvgRendererState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = isvgRendererState.h; sourceTree = "<group>"; };
+		880D751D1538071D001F8294 /* svg_ascii.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = svg_ascii.h; sourceTree = "<group>"; };
+		880D751E1538071D001F8294 /* svg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = svg.h; sourceTree = "<group>"; };
+		880D751F1538071D001F8294 /* svgint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = svgint.h; sourceTree = "<group>"; };
+		880D767F153815F4001F8294 /* svg_ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = svg_ios.h; sourceTree = "<group>"; };
+		880D771815382385001F8294 /* libsvg-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libsvg-ios.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B9D4032152DE618009B02CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88013653153D5DBB00BD32D9 /* libxml2.dylib in Frameworks */,
+				88013651153D5D9000BD32D9 /* libz.dylib in Frameworks */,
+				6B9D403A152DE618009B02CF /* UIKit.framework in Frameworks */,
+				6B9D403C152DE618009B02CF /* Foundation.framework in Frameworks */,
+				6B9D403E152DE618009B02CF /* CoreGraphics.framework in Frameworks */,
+				880D771915382385001F8294 /* libsvg-ios.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B9D402A152DE618009B02CF = {
+			isa = PBXGroup;
+			children = (
+				6B9D403F152DE618009B02CF /* mySvgImages */,
+				6B9D4038152DE618009B02CF /* Frameworks */,
+				6B9D4036152DE618009B02CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B9D4036152DE618009B02CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B9D4035152DE618009B02CF /* mySvgImages.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B9D4038152DE618009B02CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88013652153D5DBB00BD32D9 /* libxml2.dylib */,
+				88013650153D5D9000BD32D9 /* libz.dylib */,
+				6B9D4039152DE618009B02CF /* UIKit.framework */,
+				6B9D403B152DE618009B02CF /* Foundation.framework */,
+				6B9D403D152DE618009B02CF /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B9D403F152DE618009B02CF /* mySvgImages */ = {
+			isa = PBXGroup;
+			children = (
+				880D752115380723001F8294 /* LibSVG */,
+				880B03F31536E32B000D3681 /* svg.png */,
+				6B9D4048152DE618009B02CF /* AppDelegate.h */,
+				6B9D4049152DE618009B02CF /* AppDelegate.m */,
+				6B9D404B152DE618009B02CF /* MasterViewController.h */,
+				6B9D404C152DE618009B02CF /* MasterViewController.m */,
+				6B9D4051152DE618009B02CF /* MasterViewController.xib */,
+				6B9D404E152DE618009B02CF /* DetailViewController.h */,
+				6B9D404F152DE618009B02CF /* DetailViewController.m */,
+				6B9D4054152DE618009B02CF /* DetailViewController.xib */,
+				6B9D4040152DE618009B02CF /* Supporting Files */,
+			);
+			path = mySvgImages;
+			sourceTree = "<group>";
+		};
+		6B9D4040152DE618009B02CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8801364D153D5BD600BD32D9 /* samples */,
+				6B9D405C152DE8BB009B02CF /* images */,
+				6B9D4041152DE618009B02CF /* mySvgImages-Info.plist */,
+				6B9D4042152DE618009B02CF /* InfoPlist.strings */,
+				6B9D4045152DE618009B02CF /* main.m */,
+				6B9D4047152DE618009B02CF /* mySvgImages-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		880D752115380723001F8294 /* LibSVG */ = {
+			isa = PBXGroup;
+			children = (
+				880D771815382385001F8294 /* libsvg-ios.a */,
+				880D767F153815F4001F8294 /* svg_ios.h */,
+				880D751A1538071D001F8294 /* isvgRenderer.h */,
+				880D751B1538071D001F8294 /* isvgRendererState.h */,
+				880D751D1538071D001F8294 /* svg_ascii.h */,
+				880D751E1538071D001F8294 /* svg.h */,
+				880D751F1538071D001F8294 /* svgint.h */,
+			);
+			name = LibSVG;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B9D4034152DE618009B02CF /* mySvgImages */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B9D4059152DE618009B02CF /* Build configuration list for PBXNativeTarget "mySvgImages" */;
+			buildPhases = (
+				6B9D4031152DE618009B02CF /* Sources */,
+				6B9D4032152DE618009B02CF /* Frameworks */,
+				6B9D4033152DE618009B02CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mySvgImages;
+			productName = mySvgImages;
+			productReference = 6B9D4035152DE618009B02CF /* mySvgImages.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B9D402C152DE618009B02CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 6B9D402F152DE618009B02CF /* Build configuration list for PBXProject "mySvgImages" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6B9D402A152DE618009B02CF;
+			productRefGroup = 6B9D4036152DE618009B02CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B9D4034152DE618009B02CF /* mySvgImages */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B9D4033152DE618009B02CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B9D4044152DE618009B02CF /* InfoPlist.strings in Resources */,
+				6B9D4053152DE618009B02CF /* MasterViewController.xib in Resources */,
+				6B9D4056152DE618009B02CF /* DetailViewController.xib in Resources */,
+				6B9D405D152DE8BB009B02CF /* images in Resources */,
+				880B03F41536E32B000D3681 /* svg.png in Resources */,
+				8801364E153D5BD600BD32D9 /* samples in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B9D4031152DE618009B02CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B9D4046152DE618009B02CF /* main.m in Sources */,
+				6B9D404A152DE618009B02CF /* AppDelegate.m in Sources */,
+				6B9D404D152DE618009B02CF /* MasterViewController.m in Sources */,
+				6B9D4050152DE618009B02CF /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6B9D4042152DE618009B02CF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B9D4043152DE618009B02CF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6B9D4051152DE618009B02CF /* MasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B9D4052152DE618009B02CF /* en */,
+			);
+			name = MasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		6B9D4054152DE618009B02CF /* DetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B9D4055152DE618009B02CF /* en */,
+			);
+			name = DetailViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B9D4057152DE618009B02CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6B9D4058152DE618009B02CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B9D405A152DE618009B02CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mySvgImages/mySvgImages-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "mySvgImages/mySvgImages-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/mySvgImages\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6B9D405B152DE618009B02CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mySvgImages/mySvgImages-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "mySvgImages/mySvgImages-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/mySvgImages\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B9D402F152DE618009B02CF /* Build configuration list for PBXProject "mySvgImages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B9D4057152DE618009B02CF /* Debug */,
+				6B9D4058152DE618009B02CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B9D4059152DE618009B02CF /* Build configuration list for PBXNativeTarget "mySvgImages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B9D405A152DE618009B02CF /* Debug */,
+				6B9D405B152DE618009B02CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B9D402C152DE618009B02CF /* Project object */;
+}
